@@ -25,6 +25,8 @@ const io = socketIo(server, {
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => res.send('¡Hola, Cloud Run!'));
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
