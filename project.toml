@@ -1,0 +1,10 @@
+[build]
+builder = "gcr.io/buildpacks/builder:v1"
+
+[[build.env]]
+name = "GOOGLE_RUNTIME"
+value = "nodejs"
+
+[[build.env]]
+name = "GOOGLE_ENTRYPOINT"
+value = "node server.js"

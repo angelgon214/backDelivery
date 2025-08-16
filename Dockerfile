@@ -1,10 +1,10 @@
-# Usa una imagen base oficial de Node.js (actualizada a v20 para coincidir con tu entorno local)
+# Usa una imagen base oficial de Node.js (versión 20 para coincidir con tu entorno local)
 FROM node:20
 
 # Establece el directorio de trabajo
 WORKDIR /app
 
-# Copia package.json y package-lock.json (si existe)
+# Copia package.json y package-lock.json
 COPY package*.json ./
 
 # Instala dependencias
@@ -20,4 +20,4 @@ EXPOSE 8080
 ENV PORT=8080
 
 # Comando para iniciar la aplicación
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
