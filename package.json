@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "node server.js",
-    "build": "ng build --prod"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.53.0",
