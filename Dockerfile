@@ -1,4 +1,4 @@
-# Usa una imagen base oficial de Node.js (versión 20 para coincidir con tu entorno local)
+# Usa una imagen base oficial de Node.js
 FROM node:20
 
 # Establece el directorio de trabajo
