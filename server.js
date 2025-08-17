@@ -3,6 +3,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 const cors = require('cors');
 require('dotenv').config();
+const path = require('path');
 
 // Importar configuración de Supabase para verificar conexión
 const supabase = require('./src/config/supabase');
