@@ -2,10 +2,53 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Bienvenido</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido a mi app</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 10px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    p {
+      font-size: 1.2em;
+      color: #7f8c8d;
+      margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>🎉 Bienvenido a mi app en Cloud Run 🎉</h1>
+  <h1>Bienvenido a mi app</h1>
   <p>Desplegado con Express y Google Cloud Run</p>
 </body>
 </html>
