@@ -98,9 +98,7 @@ async function testDatabaseConnection() {
 
 const PORT = process.env.PORT || 8080;
 server.listen(PORT, async () => {
-  console.log(` Servidor corriendo en puerto ${PORT}`);
-  console.log(` Frontend URL: http://localhost:4200`);
-  console.log(` Backend URL: http://localhost:${PORT}`);
+
   
   // Verificar conexión a base de datos
   await testDatabaseConnection();
