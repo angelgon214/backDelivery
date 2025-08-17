@@ -25,8 +25,10 @@ const io = socketIo(server, {
 app.use(cors());
 app.use(express.json());
 
+// Servir archivos estáticos (CSS, imágenes, etc.)
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Ruta principal que sirve el HTML
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
